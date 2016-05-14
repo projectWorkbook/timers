@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="czarnecki.michal.androidtimertest">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.TimerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.CountdownTimer"
+            android:label="@string/title_activity_countdown_timer"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".Service.TimerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Service.CountdownService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activities.BackgroundTimerActivity"
+            android:exported="true"
+            android:label="@string/title_activity_background_timer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.BrActiv"
+            android:label="@string/title_activity_br"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

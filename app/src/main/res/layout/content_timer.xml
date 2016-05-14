@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/countdownTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:text="@string/defaultTime"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/startButtonLabel"
+        android:id="@+id/countdownController"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/countdownTimer"
+        android:layout_alignRight="@+id/countdownTimer"
+        android:layout_alignEnd="@+id/countdownTimer"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resetButtonLabel"
+        android:id="@+id/resetCountdown"
+        android:layout_alignTop="@+id/countdownController"
+        android:layout_alignLeft="@+id/countdownTimer"
+        android:layout_alignStart="@+id/countdownTimer"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:id="@+id/takeTime"
+        android:layout_alignTop="@+id/countdownTimer"
+        android:layout_toLeftOf="@+id/countdownController"
+        android:layout_toStartOf="@+id/countdownController" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:id="@+id/addTime"
+        android:layout_above="@+id/countdownController"
+        android:layout_toRightOf="@+id/resetCountdown"
+        android:layout_toEndOf="@+id/resetCountdown" />
+
+</RelativeLayout>

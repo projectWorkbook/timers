@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AndroidTimerTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="timerVal">00:00</string>
+    <string name="defaultTime">30:00</string>
+    <string name="pauseButtonLabel">Pause</string>
+    <string name="startButtonLabel">Start</string>
+    <string name="resetButtonLabel">Reset</string>
+    <string name="title_activity_countdown_timer">CountdownTimer</string>
+    <string name="countdown">Countdown</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_service_test">serviceTestActivity</string>
+    <string name="title_activity_background_timer">BackgroundTimerActivity</string>
+    <string name="title_activity_stoper">Stoper</string>
+    <string name="title_activity_timers_tab">TimersTabActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_br">BrActiv</string>
+    <string name="title_activity_counter">CounterActivity</string>
+</resources>
